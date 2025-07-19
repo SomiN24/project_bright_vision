@@ -1,32 +1,38 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { GraduationCap, Building, Smartphone, BookOpen } from 'lucide-react';
-import workshopImage from '@/assets/workshop-image.jpg';
+import { GraduationCap, Building, Smartphone, BookOpen, Handshake, Lightbulb, CheckCircle, Database, Users, BarChart, Wrench } from 'lucide-react'; // Added new icons
+import workshopImage from '@/assets/workshop-image.jpg'; // Assuming this path is correct for your image
 
 const ImplementationSection = () => {
   const phases = [
     {
-      icon: GraduationCap,
-      title: 'Teacher Workshop',
-      description: 'We conduct hands-on sessions to train educators',
-      details: 'Comprehensive training on adaptive learning tools and inclusive teaching methods',
-    },
-    {
-      icon: Building,
-      title: 'School Onboarding',
-      description: 'Each partner school is formally inducted into the program',
-      details: 'Establishing partnerships and setting up infrastructure requirements',
-    },
-    {
-      icon: Smartphone,
-      title: 'Product Introduction',
-      description: 'Students receive and are guided on using the tools',
-      details: 'Personalized tool allocation and hands-on training sessions',
-    },
-    {
       icon: BookOpen,
-      title: 'SOP Guidelines',
-      description: 'Schools receive detailed SOPs on issuing, using, and storing tools',
-      details: 'Complete operational procedures for sustainable program management',
+      title: 'Introduction',
+      description: 'Focused on introducing the program to potential beneficiaries and stakeholders.',
+    },
+    {
+      icon: Database,
+      title: 'Data Collection',
+      description: 'Gathering essential information about beneficiaries, including disability status, financial need, and intended use of the Smart Vision Glasses.',
+    },
+    {
+      icon: CheckCircle,
+      title: 'Product Validation',
+      description: 'Thorough testing and verification of the Smart Vision Glasses to ensure they meet quality standards and effectively address user needs.',
+    },
+    {
+      icon: Users,
+      title: 'Training',
+      description: 'Providing comprehensive training sessions to beneficiaries on how to optimally use and maintain their new Smart Vision Glasses.',
+    },
+    {
+      icon: BarChart, // New icon for phase 5
+      title: 'Data Analysis', // New title for phase 5
+      description: "Analyzing collected data to assess program effectiveness, identify areas for improvement, and measure the impact on beneficiaries' lives.",
+    },
+    {
+      icon: Wrench, // New icon for phase 6
+      title: 'AMC Support', // New title for phase 6
+      description: 'Offering Annual Maintenance Contract (AMC) support to ensure long-term functionality, technical assistance, and continued optimal usage of the devices.',
     },
   ];
 
@@ -65,10 +71,11 @@ const ImplementationSection = () => {
           </div>
 
           {/* Implementation Phases */}
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Changed grid to md:grid-cols-2 lg:grid-cols-3 to accommodate 6 items in a 2x3 layout */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {phases.map((phase, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group hover:shadow-elegant transition-all duration-300 transform hover:scale-105 border-l-4 border-l-primary"
               >
                 <CardContent className="p-6">
@@ -113,7 +120,7 @@ const ImplementationSection = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">📱</span>
+                    <span className="text-2xl">📤</span>
                   </div>
                   <h4 className="text-sm font-semibold text-foreground mb-2">Platform Upload</h4>
                   <p className="text-xs text-muted-foreground">
@@ -123,7 +130,7 @@ const ImplementationSection = () => {
 
                 <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">💰</span>
+                    <span className="text-2xl">🚀 </span>
                   </div>
                   <h4 className="text-sm font-semibold text-foreground mb-2">Crowdfunding Launch</h4>
                   <p className="text-xs text-muted-foreground">
@@ -133,7 +140,7 @@ const ImplementationSection = () => {
 
                 <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🎓</span>
+                    <span className="text-2xl">🗣️</span>
                   </div>
                   <h4 className="text-sm font-semibold text-foreground mb-2">Monthly Workshops</h4>
                   <p className="text-xs text-muted-foreground">
@@ -143,7 +150,7 @@ const ImplementationSection = () => {
 
                 <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🔧</span>
+                    <span className="text-2xl">⚙️</span>
                   </div>
                   <h4 className="text-sm font-semibold text-foreground mb-2">Quarterly AMC Checks</h4>
                   <p className="text-xs text-muted-foreground">

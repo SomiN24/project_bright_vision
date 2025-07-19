@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="bg-foreground text-background py-16">
+    <footer id="contact" className="bg-neutral-600 text-background py-16">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Content */}
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-background/20 text-background hover:bg-background hover:text-foreground"
+                  className="border-background/20 hover:bg-background hover:text-foreground"
                 >
                   Contact Us
                 </Button>

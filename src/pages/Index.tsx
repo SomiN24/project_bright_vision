@@ -1,6 +1,8 @@
 import Header from '@/components/Header';
+import ScrollSpyNav from '@/components/ScrollSpyNav';
 import HeroSection from '@/components/HeroSection';
 import WhoWeAreSection from '@/components/WhoWeAreSection';
+import TheProblem from '@/components/TheProblem';
 import VisionSection from '@/components/VisionSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import ImplementationSection from '@/components/ImplementationSection';
@@ -12,9 +14,11 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <ScrollSpyNav></ScrollSpyNav>
       <main>
         <HeroSection />
         <WhoWeAreSection />
+        <TheProblem/>
         <VisionSection />
         <HowItWorksSection />
         <ImplementationSection />
