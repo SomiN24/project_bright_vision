@@ -12,13 +12,13 @@ interface Partner {
 const technologyPartners: Partner[] = [
   {
     name: 'SHG Technologies',
-    logo: '/public/logo.png',
+    logo: '/logo.png',
     link: 'https://shgtechnologies.com',
     description: 'SHG Technologies Pvt. Ltd. is a Bangalore-based company dedicated to transforming the lives of visually impaired individuals through cutting-edge assistive technology. SHG specializes in the development and manufacturing of Smart Vision Glasses and AURA Vision Glasses, leveraging Artificial Intelligence, Machine Vision, and Machine Learning to provide innovative solutions.',
   },
   {
     name: 'Brane Enterprises',
-    logo: '/public/logo-white.svg',
+    logo: '/logo-white.svg',
     link: 'https://www.braneenterprises.com',
     description: 'Brane is an AI innovation lab focused on creating inclusive, human-centered technology. For Project Bright Vision, Brane has developed assistive tools that use AI to provide real-time voice guidance and enhanced vision support for the visually impaired. Their work empowers greater independence and opens new pathways to employment through smart, accessible solutions.', // Placeholder description
   },
