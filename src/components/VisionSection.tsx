@@ -1,8 +1,8 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Eye, Lightbulb, Globe, Users, Target, TrendingUp, Glasses, Navigation, BookOpen } from 'lucide-react';
-import indianStudentsClassroom from '@/assets/indian-students-classroom.jpg';
-import indianStudentSmartGlasses from '@/assets/indian-student-smart-glasses.jpg';
-import indianStudentsInclusive from '@/assets/indian-students-inclusive-learning.jpg';
+import catalyzing from '@/assets/catalyzing.jpeg';
+import smartVisionPro from '@/assets/smartvisionpro.jpeg';
+import futureOfInclusion from '@/assets/futureofinclusion.jpeg';
 const VisionSection = () => {
   return <section id="vision" className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
@@ -15,7 +15,7 @@ const VisionSection = () => {
               </div>
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Our Aspiration
+              Our Vision
             </h2>
             <p className="text-xl text-muted-foreground max-w-6xl mx-auto leading-relaxed">
               We aspire to profoundly impact students' lives by fostering their independence, enabling greater societal inclusion, and providing them with accessible, long-lasting, and cost-efficient SMART educational resources.
@@ -129,9 +129,9 @@ We partner directly with schools to implement SMART tools, training, and essenti
               </div>
               <div className="relative">
                 <img 
-                  src={indianStudentsClassroom} 
+                  src={catalyzing} 
                   alt="Indian students using assistive technology in classroom" 
-                  className="rounded-2xl shadow-elegant w-full"
+                  className="rounded-2xl shadow-elegant w-4/5 mx-auto"
                 />
               </div>
             </div>
@@ -142,18 +142,17 @@ We partner directly with schools to implement SMART tools, training, and essenti
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 relative">
                 <img 
-                  src={indianStudentSmartGlasses} 
+                  src={smartVisionPro} 
                   alt="Indian student using Smart Vision Pro Glasses" 
                   className="rounded-2xl shadow-elegant w-full"
                 />
               </div>
               <div className="order-1 lg:order-2">
                 <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  Smart Vision Pro Glasses
+                  Our Intelligence
                 </h3>
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                                    Our latest initiative focuses on the distribution of Smart Vision Pro & Lite Glasses, which empower individuals with NO vision:
-
+                  Our latest initiative focuses on the distribution of Smart Vision Pro & Lite Glasses, which empower individuals with NO vision:
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
@@ -175,10 +174,11 @@ We partner directly with schools to implement SMART tools, training, and essenti
                     <span className="text-foreground">Navigate with real-time voice guidance</span>
                   </div>
                 </div>
-
+              
+              
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   <br/>
-                    Our latest initiative focuses on the distribution of Smart Vision Pro & Lite Glasses, which empower individuals with LOW vision:                  
+                    Complementing this, we also provide Aura Vision Glasses, designed to support and enhance the capabilities of those with LOW vision :                   
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
@@ -208,48 +208,64 @@ We partner directly with schools to implement SMART tools, training, and essenti
           </div>
 
           {/* A Future of Inclusion */}
-          <div className="bg-gradient-subtle rounded-2xl p-8 lg:p-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-                  A Future of Inclusion
-                </h3>
-                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                  The MVPL Group of Companies is already leading by example—employing visually impaired individuals who are aided by Smart Vision Pro Glasses in the workplace. This demonstrates the real-world viability of assistive technology and its role in inclusive employment.
-                </p>
-                <div className="space-y-4">
-                  <h4 className="text-xl font-semibold text-foreground">Through Project Bright Vision, we are committed to:</h4>
-                  <ul className="space-y-3">
-                    <li className="flex items-start">
-                      <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      </div>
-                      <span className="text-muted-foreground">Raising funds to provide AI-enabled tools</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      </div>
-                      <span className="text-muted-foreground">Training beneficiaries to use these tools independently</span>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                      </div>
-                      <span className="text-muted-foreground">Delivering corporate readiness programs to enhance employment opportunities</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="relative">
-                <img 
-                  src={indianStudentsInclusive} 
-                  alt="Indian students in inclusive learning environment" 
-                  className="rounded-2xl shadow-elegant w-full"
-                />
-              </div>
+<div className="bg-gradient-subtle rounded-2xl p-8 lg:p-12">
+  <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
+        A Future of Inclusion
+      </h3>
+      <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+        The MVPL Group of Companies is already leading by example—employing visually impaired individuals who are aided by Smart Vision Pro Glasses in the workplace. This demonstrates the real-world viability of assistive technology and its role in inclusive employment.
+      </p>
+      <div className="space-y-4">
+        <h4 className="text-xl font-semibold text-foreground">
+          Through Project Bright Vision, we are committed to:
+        </h4>
+        <ul className="space-y-3">
+          <li className="flex items-start">
+            <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
             </div>
-          </div>
+            <span className="text-muted-foreground">
+              Raising funds to provide AI-enabled tools
+            </span>
+          </li>
+          <li className="flex items-start">
+            <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
+            </div>
+            <span className="text-muted-foreground">
+              Training beneficiaries to use these tools independently
+            </span>
+          </li>
+          <li className="flex items-start">
+            <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-0.5">
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
+            </div>
+            <span className="text-muted-foreground">
+              Delivering corporate readiness programs to enhance employment opportunities
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Image with caption */}
+    <div className="relative">
+      <figure>
+        <img
+          src={futureOfInclusion}
+          alt="Indian students in inclusive learning environment"
+          className="rounded-2xl shadow-elegant w-full"
+        />
+        <figcaption className="text-sm text-muted-foreground text-center mt-3 italic">
+          "Vinay receiving laptop from Jagdish Salgaonkar, Alyzaa Merchant, Smt Surekha Salvi & Zainab Merchant"
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
     </section>;

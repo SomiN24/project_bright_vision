@@ -20,14 +20,14 @@ const HowItWorksSection = () => {
     {
       icon: FileText,
       title: 'Distribution Plan',
-      description: 'Detailed information about each selected beneficiary will be meticulously collected and verified. Ensuring accurate targeting and efficient delivery of the Smart Vision Glasses. A comprehensive distribution plan for the Smart Vision Glasses will be formulated and communicated to all stakeholders before program implementation. We guarantee transparency and smooth execution across Mumbai districts.',
+      description: 'Detailed information about each selected beneficiary will be meticulously collected and verified. Ensuring accurate targeting and efficient delivery of the Smart Vision Glasses. A comprehensive distribution plan for the Smart Vision Glasses will be formulated and communicated to all stakeholders before program implementation. We guarantee transparency and smooth execution across the nation.',
       color: 'text-primary',
       bgColor: 'bg-primary/10',
     },
     {
       icon: TrendingUp,
       title: 'Support and Training',
-      description: 'Beneficiaries will receive thorough training on how to use the Smart Vision Glasses effectively. Our plan maximizes their ability to utilize the device fully for both educational use and day-to-day activities. Ongoing support will be provided to address any issues and ensure optimal usage of the device. Ensuring optimal long-term utilization and sustained benefit, truly empowering individuals with low vision.',
+      description: 'Beneficiaries will receive thorough training on how to use the Smart Vision Glasses effectively. Our plan maximizes their ability to utilize the device fully for both educational use and day-to-day activities. Ongoing support will be provided to address any issues and ensure optimal usage of the device. Ensuring optimal long-term utilization and sustained benefit, truly empowering individuals with low vision.',
       color: 'text-purple-600',
       bgColor: 'bg-purple-50',
     },
@@ -119,14 +119,14 @@ const HowItWorksSection = () => {
                                   <Card className="absolute inset-0 w-full h-full transition-transform duration-700 preserve-3d group-hover:rotate-y-180">
                                     {/* Front of inner card */}
                                     <div className="absolute inset-0 w-full h-full backface-hidden bg-background border-2 border-border rounded-lg flex flex-col items-center justify-center p-4 text-center text-sm" // Increased padding
-                                         style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06)' }}>
+                                         style={{ /* Removed boxShadow */ }}>
                                       <div className={`w-10 h-10 ${criterion.bgColor} rounded-full flex items-center justify-center mx-auto mb-2`}>
                                         <criterion.icon className={`w-5 h-5 ${criterion.color}`} />
                                       </div>
                                     </div>
                                     {/* Back of inner card */}
                                     <div className="absolute inset-0 w-full h-full backface-hidden bg-white text-foreground rounded-lg rotate-y-180 flex items-center justify-center p-4 text-center text-sm" // Increased padding
-                                         style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06)' }}>
+                                         style={{ /* Removed boxShadow */ }}>
                                       <CardContent className="p-0">
                                         <p className="text-base font-medium leading-tight"> {/* Increased font size */}
                                           {criterion.content}

@@ -6,8 +6,12 @@ import TheProblem from '@/components/TheProblem';
 import VisionSection from '@/components/VisionSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import ImplementationSection from '@/components/ImplementationSection';
+import OurProduct from '@/components/OurProduct';
+import Financials from '@/components/Financials';
 import FundraisingSection from '@/components/FundraisingSection';
 import ImpactSection from '@/components/ImpactSection';
+import CertificationsLicenses from '@/components/CertificationsLicenses';
+import TechnologyPartner from '@/components/TechnologyPartner';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -22,8 +26,12 @@ const Index = () => {
         <VisionSection />
         <HowItWorksSection />
         <ImplementationSection />
+        <OurProduct/>
+        <Financials />
         <FundraisingSection />
         <ImpactSection />
+        <TechnologyPartner />
+        <CertificationsLicenses />
       </main>
       <Footer />
     </div>

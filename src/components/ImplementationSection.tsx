@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, Building, Smartphone, BookOpen, Handshake, Lightbulb, CheckCircle, Database, Users, BarChart, Wrench } from 'lucide-react'; // Added new icons
-import workshopImage from '@/assets/workshop-image.jpg'; // Assuming this path is correct for your image
+import educate from '@/assets/image.png'; // Assuming this path is correct for your image
 
 const ImplementationSection = () => {
   const phases = [
@@ -43,7 +43,7 @@ const ImplementationSection = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Implementation Roadmap
+              Execution Roadmap
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               A structured approach to ensure successful deployment and long-term sustainability
@@ -54,9 +54,9 @@ const ImplementationSection = () => {
           <div className="mb-16">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
               <img
-                src={workshopImage}
+                src={educate}
                 alt="Teacher workshop and training session"
-                className="w-full h-64 lg:h-96 object-cover"
+                className="w-full h-80 lg:h-[44rem] object-cover object-center" // Increased height to h-72 and lg:h-[28rem]
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
               <div className="absolute bottom-6 left-6 right-6">

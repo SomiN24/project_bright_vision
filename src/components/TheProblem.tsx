@@ -13,52 +13,21 @@ const TheProblem = () => {
             Visually impaired individuals face significant barriers in education and daily life.
           </p>
 
+          {/* YouTube Video Embed */}
+          <div className="relative w-full max-w-4xl mx-auto mb-16 rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              className="w-full aspect-video" // Use aspect-video for responsive 16:9 ratio
+              // IMPORTANT: Replace 'dQw4w9WgXcQ' with your actual YouTube video ID.
+              // The parameters like autoplay, mute, loop, playlist, enablejsapi, and rel can be adjusted.
+              src="https://www.youtube.com/embed/VAaVXs4WfoI"
 
-          
-          
-            
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">📤</span>
-                  </div>
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Platform Upload</h4>
-                  <p className="text-xs text-muted-foreground">
-                    All verified cases uploaded to JSF Trust platform
-                  </p>
-                </div>
-
-                <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🚀 </span>
-                  </div>
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Crowdfunding Launch</h4>
-                  <p className="text-xs text-muted-foreground">
-                    Targeted crowdfunding for each verified case
-                  </p>
-                </div>
-
-                <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">🗣️</span>
-                  </div>
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Monthly Workshops</h4>
-                  <p className="text-xs text-muted-foreground">
-                    Ongoing training + user feedback collection
-                  </p>
-                </div>
-
-                <div className="text-center p-6 bg-background rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-2xl">⚙️</span>
-                  </div>
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Quarterly AMC Checks</h4>
-                  <p className="text-xs text-muted-foreground">
-                    Timely maintenance and upgrades
-                  </p>
-                </div>
-              </div>
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
             
           
         </div>

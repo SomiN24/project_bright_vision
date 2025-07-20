@@ -37,11 +37,13 @@ const brailleMap: { [key: string]: boolean[][] } = {
 // Function to convert text to a flat array of Braille cell objects with color info
 const textToBrailleCells = (text: string, visionWord: string): { dots: boolean[][], color: string }[] => {
   const cells: { dots: boolean[][], color: string }[] = [];
-  const visionEndIndex = visionWord.length;
+  // Find the start and end index of the visionWord within the text
+  const visionStartIndex = text.toLowerCase().indexOf(visionWord.toLowerCase());
+  const visionEndIndex = visionStartIndex + visionWord.length;
 
   for (let i = 0; i < text.length; i++) {
     const char = text[i].toLowerCase();
-    const isVisionPart = i < visionEndIndex;
+    const isVisionPart = i >= visionStartIndex && i < visionEndIndex;
     const braillePattern = brailleMap[char] || brailleMap[' ']; // Default to space if char not found
 
     cells.push({
@@ -53,8 +55,8 @@ const textToBrailleCells = (text: string, visionWord: string): { dots: boolean[]
 };
 
 const HeroSection = () => {
-  const englishText = "Vision for the Blind";
-  const visionWord = "Vision";
+  const englishText = "Project Bright Vision"; // Changed text to "Project Bright Vision"
+  const visionWord = "Vision"; // Keep "Vision" to color that part maroon
   const brailleCells = textToBrailleCells(englishText, visionWord);
 
   const [showBraille, setShowBraille] = useState(false);
@@ -82,18 +84,11 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 py-20">
         <div className="max-w-4xl">
-          {/* Badge */}
-          <div className="fade-in flex items-center space-x-2 mb-6">
-            <div className="flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full border border-primary/20">
-              <Heart className="w-4 h-4 mr-2" />
-              <span className="text-sm font-medium">A JSF Trust Initiative</span>
-            </div>
-          </div>
+          
 
           {/* Main Heading with Braille Script */}
           <h1 className="fade-in fade-in-delay-1 text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight flex flex-col lg:flex-row lg:items-end">
-            <span className="text-[#881337] whitespace-nowrap">Vision</span>&nbsp;
-            <span className="text-foreground whitespace-nowrap">for the Blind</span>
+            Project Bright<span className="text-[#881337] whitespace-nowrap">Vision</span>&nbsp;
             
             {/* Braille Script Container - Custom Dot Rendering */}
             <div

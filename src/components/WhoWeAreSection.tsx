@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, BookOpen } from 'lucide-react';
-import communityIcon from '@/assets/community-icon.jpg';
+import communityIcon from '@/assets/whoweare.mp4'; // This import is now for the video
 
 const WhoWeAreSection = () => {
   return (
@@ -18,21 +18,28 @@ const WhoWeAreSection = () => {
               Who We Are
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              We are a social enterprise dedicated to reforming philantrophy and reimagining what it means to make a social impact
+              We are a social enterprise dedicated to reforming philanthropy and reimagining what it means to make a social impact
             </p>
           </div>
 
           {/* Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
+            {/* Video */}
             <div className="order-2 lg:order-1">
               <div className="relative">
-                <img
+                {/* Replaced <img> with <video> tag */}
+                <video
                   src={communityIcon}
-                  alt="Community support for visually impaired students"
                   className="w-full rounded-2xl shadow-elegant"
-                />
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl"></div>
+                  autoPlay // Autoplays the video
+                  loop     // Loops the video continuously
+                  muted    // Mutes the video (essential for autoplay in most browsers)
+                  playsInline // Ensures video plays inline on iOS
+                  preload="auto" // Preloads the video for faster playback
+                >
+                  Your browser does not support the video tag.
+                </video>
+                {/* Removed the overlay div as it's typically for images, not videos */}
               </div>
             </div>
 

@@ -3,10 +3,16 @@ import { Heart, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
-    { name: 'Our Vision', href: '#vision' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Implementation', href: '#implementation' },
-    { name: 'Impact', href: '#impact' },
+    { name: 'Who We Are', href: '#who-we-are' },
+  { name: 'The Problem', href: '#the-problem' },
+  { name: 'Our Vision', href: '#vision' },
+  { name: 'How It Works', href: '#how-it-works' },
+  { name: 'Implementation', href: '#implementation' },
+  { name: 'OurProduct', href: '#product' },
+  { name: 'Financials', href: '#financials' },
+  { name: 'Impact', href: '#impact' },
+  { name: 'Our Partners', href: '#technology-partner' },
+  { name: 'Contact', href: '#contact' },
   ];
 
   const contactInfo = [
