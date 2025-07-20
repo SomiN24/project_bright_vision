@@ -120,7 +120,7 @@ const ImpactSection = () => {
                 {/* Image for Success Story */}
                 <div className="flex-shrink-0 w-full sm:w-64"> {/* Increased width control from sm:w-48 to sm:w-64 */}
                   <img
-                    src="/public/successstory.jpeg" // Placeholder image URL
+                    src="/successstory.jpeg" // Placeholder image URL
                     alt="Student Success Story"
                     className="w-full h-auto rounded-lg object-cover shadow-md"
                     onError={(e) => {
