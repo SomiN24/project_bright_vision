@@ -1,5 +1,8 @@
 import { useState } from "react";
-
+import c1 from '@/assets/cert1.jpeg';
+import c2 from '@/assets/cert2.jpeg';
+import c3 from '@/assets/cert3.jpeg';
+import c4 from '@/assets/cert4.jpeg';
 interface Certification {
   title: string;
   image: string;
@@ -8,19 +11,19 @@ interface Certification {
 const certifications: Certification[] = [
   {
     title: "Memorandum Of Understanding Certificate Between JSF & Samarthanam Trust",
-    image: "/src/assets/cert1.jpeg",
+    image: c1,
   },
   {
     title: "JSF Registration Certificate for Undertaking CSR activities",
-    image: "/src/assets/cert2.jpeg",
+    image: c2,
   },
   {
     title: "Application of Registration for a Charitable Trust",
-    image: "/src/assets/cert3.jpeg",
+    image: c3,
   },
   {
     title: "Collaboration & Endorsement Letter",
-    image: "/src/assets/cert4.jpeg",
+    image: c4,
   },
 ];
 
