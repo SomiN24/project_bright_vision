@@ -19,8 +19,8 @@ const Footer = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'vision@jsftrust.com',
-      href: 'mailto:vision@jsftrust.com',
+      value: 'info@jsftrust.com',
+      href: 'mailto:info@jsftrust.com',
     },
     {
       icon: Phone,

@@ -70,6 +70,8 @@ const HeroSection = () => {
   }, []);
 
   return (
+
+    
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
@@ -81,6 +83,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70"></div>
       </div>
 
+      
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 py-20">
         <div className="max-w-4xl">

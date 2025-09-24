@@ -31,33 +31,24 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-4 left-4 right-4 z-50 flex items-center justify-between px-4
-        transition-all duration-300 ease-in-out ${ // Apply transition for smooth animation
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full' // Conditional classes for visibility
+      className={`fixed inset-x-2 md:inset-x-4 top-4 z-50 flex items-center justify-between px-3 md:px-4
+        transition-all duration-300 ease-in-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
         }`}
     >
       {/* Left: Logo and Tagline */}
       <div className="flex items-center space-x-3">
         <img
-          src="/BrightVision.png" //
+          src="/BrightVision.png"
           alt="JSF Logo"
-          className="w-12 h-10 rounded-full"
+          className="w-10 h-8 md:w-12 md:h-10 rounded-full object-cover"
         />
-        <div className="flex flex-col leading-tight">
-          <span className="font-semibold text-sm text-foreground">Project Bright Vision</span>
-          <span className="text-xs text-muted-foreground">A JSF Trust Initiative</span>
+        <div className="flex flex-col leading-tight text-sm">
+          <span className="font-semibold text-xs md:text-sm text-foreground">Project Bright Vision</span>
+          <span className="text-[10px] md:text-xs text-muted-foreground">A JSF Trust Initiative</span>
         </div>
       </div>
 
-      {/* Right: Buttons */}
-      <div className="flex space-x-2">
-        <Button variant="outline" size="sm">
-          Learn More
-        </Button>
-        <Button variant="cta" size="sm">
-          Support Vision
-        </Button>
-      </div>
     </header>
   );
 };

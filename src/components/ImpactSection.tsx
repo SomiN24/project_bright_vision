@@ -134,7 +134,7 @@ const ImpactSection = () => {
                   <h4 className="text-xl font-semibold text-foreground mb-3">Real Impact Stories</h4> {/* Increased font size from text-lg to text-xl and mb-2 to mb-3 */}
                   <br />
                   <p className="text-lg text-muted-foreground leading-relaxed"> {/* Increased font size from text-muted-foreground to text-lg */}
-                      ‘’Smart Vision Pro glasses helped me a lot in daily life, especially for walking and reading. I am easily able tto identify different things around me. Now I feel like I am equal to normal person.”
+                      ‘’Smart Vision Pro glasses helped me a lot in my daily life, especially for walking and reading. I am easily able to identify different things around me. Now I feel like I am equal to a normal person.”
                   </p>
                   <br />
                   <p className="text-base text-primary font-medium mt-4"> {/* Increased font size from text-sm to text-base and mt-3 to mt-4 */}

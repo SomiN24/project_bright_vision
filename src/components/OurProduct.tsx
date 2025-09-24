@@ -121,7 +121,7 @@ const OurProduct: React.FC = () => {
           <div className="sticky top-24 h-[450px]">
             <video
               className="rounded-2xl w-full h-full object-cover" // Added h-full and object-cover to fill the aspect-ratio container
-              src="product2.mp4"
+              src="/product2.mp4"
               autoPlay
               muted
               loop
